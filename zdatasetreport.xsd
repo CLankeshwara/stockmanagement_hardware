@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="zdatasetreport" targetNamespace="http://tempuri.org/zdatasetreport.xsd" xmlns:mstns="http://tempuri.org/zdatasetreport.xsd" xmlns="http://tempuri.org/zdatasetreport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="zdatasetreport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="zdatasetreport" msprop:Generator_UserDSName="zdatasetreport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="inventory_r" msprop:Generator_TableClassName="inventory_rDataTable" msprop:Generator_TableVarName="tableinventory_r" msprop:Generator_TablePropName="inventory_r" msprop:Generator_RowDeletingName="inventory_rRowDeleting" msprop:Generator_RowChangingName="inventory_rRowChanging" msprop:Generator_RowEvHandlerName="inventory_rRowChangeEventHandler" msprop:Generator_RowDeletedName="inventory_rRowDeleted" msprop:Generator_UserTableName="inventory_r" msprop:Generator_RowChangedName="inventory_rRowChanged" msprop:Generator_RowEvArgName="inventory_rRowChangeEvent" msprop:Generator_RowClassName="inventory_rRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inventory_id" msprop:Generator_ColumnVarNameInTable="columninventory_id" msprop:Generator_ColumnPropNameInRow="inventory_id" msprop:Generator_ColumnPropNameInTable="inventory_idColumn" msprop:Generator_UserColumnName="inventory_id" type="xs:string" minOccurs="0" />
+              <xs:element name="inventory_name" msprop:Generator_ColumnVarNameInTable="columninventory_name" msprop:Generator_ColumnPropNameInRow="inventory_name" msprop:Generator_ColumnPropNameInTable="inventory_nameColumn" msprop:Generator_UserColumnName="inventory_name" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+              <xs:element name="receive" msprop:Generator_ColumnVarNameInTable="columnreceive" msprop:Generator_ColumnPropNameInRow="receive" msprop:Generator_ColumnPropNameInTable="receiveColumn" msprop:Generator_UserColumnName="receive" type="xs:int" minOccurs="0" />
+              <xs:element name="issu" msprop:Generator_ColumnVarNameInTable="columnissu" msprop:Generator_ColumnPropNameInRow="issu" msprop:Generator_ColumnPropNameInTable="issuColumn" msprop:Generator_UserColumnName="issu" type="xs:int" minOccurs="0" />
+              <xs:element name="closing" msprop:Generator_ColumnVarNameInTable="columnclosing" msprop:Generator_ColumnPropNameInRow="closing" msprop:Generator_ColumnPropNameInTable="closingColumn" msprop:Generator_UserColumnName="closing" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
