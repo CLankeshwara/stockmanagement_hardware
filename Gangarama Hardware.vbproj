@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1001A8A4-132C-44F7-AF1D-81A3CE05031B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Gangarama Hardware</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gangarama Hardware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gangarama Hardware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>C:\Users\User\Downloads\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF5, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="changeuser.Designer.vb">
+      <DependentUpon>changeuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changeuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="createinventory.Designer.vb">
+      <DependentUpon>createinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customercontrol.Designer.vb">
+      <DependentUpon>customercontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customercontrol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deletecustomer.Designer.vb">
+      <DependentUpon>deletecustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deletecustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteinventory.Designer.vb">
+      <DependentUpon>deleteinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletesupplier.Designer.vb">
+      <DependentUpon>deletesupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deletesupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutus.Designer.vb">
+      <DependentUpon>aboutus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteuser.Designer.vb">
+      <DependentUpon>deleteuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final.Designer.vb">
+      <DependentUpon>Final.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Final.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetpassword.Designer.vb">
+      <DependentUpon>forgetpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.vb">
+      <DependentUpon>help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventorycontrol.Designer.vb">
+      <DependentUpon>inventorycontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inventorycontrol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmenu.Designer.vb">
+      <DependentUpon>mainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulewatermark.vb" />
+    <Compile Include="Modu_id.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="new createinventory.Designer.vb">
+      <DependentUpon>new createinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="new createinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newcustomer.Designer.vb">
+      <DependentUpon>newcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newsupplier.Designer.vb">
+      <DependentUpon>newsupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newsupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newuser.Designer.vb">
+      <DependentUpon>newuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grn.Designer.vb">
+      <DependentUpon>grn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issu_invoice.Designer.vb">
+      <DependentUpon>issu_invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="issu_invoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportdatasourse.vb" />
+    <Compile Include="suppliercontrol.Designer.vb">
+      <DependentUpon>suppliercontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suppliercontrol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatecustomer.Designer.vb">
+      <DependentUpon>updatecustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updatecustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateinventoryprice.Designer.vb">
+      <DependentUpon>updateinventoryprice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateinventoryprice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatesupplier.Designer.vb">
+      <DependentUpon>updatesupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updatesupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zdatasetreport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zdatasetreport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="zdatasetreport.vb">
+      <DependentUpon>zdatasetreport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="zfinalreport.Designer.vb">
+      <DependentUpon>zfinalreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zfinalreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="changeuser.resx">
+      <DependentUpon>changeuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createinventory.resx">
+      <DependentUpon>createinventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customercontrol.resx">
+      <DependentUpon>customercontrol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletecustomer.resx">
+      <DependentUpon>deletecustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteinventory.resx">
+      <DependentUpon>deleteinventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletesupplier.resx">
+      <DependentUpon>deletesupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutus.resx">
+      <DependentUpon>aboutus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteuser.resx">
+      <DependentUpon>deleteuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final.resx">
+      <DependentUpon>Final.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetpassword.resx">
+      <DependentUpon>forgetpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventorycontrol.resx">
+      <DependentUpon>inventorycontrol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmenu.resx">
+      <DependentUpon>mainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new createinventory.resx">
+      <DependentUpon>new createinventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newcustomer.resx">
+      <DependentUpon>newcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newsupplier.resx">
+      <DependentUpon>newsupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newuser.resx">
+      <DependentUpon>newuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issu_invoice.resx">
+      <DependentUpon>issu_invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grn.resx">
+      <DependentUpon>grn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="suppliercontrol.resx">
+      <DependentUpon>suppliercontrol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatecustomer.resx">
+      <DependentUpon>updatecustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateinventoryprice.resx">
+      <DependentUpon>updateinventoryprice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatesupplier.resx">
+      <DependentUpon>updatesupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zfinalreport.resx">
+      <DependentUpon>zfinalreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zreportinv.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="zdatasetreport.xsc">
+      <DependentUpon>zdatasetreport.xsd</DependentUpon>
+    </None>
+    <None Include="zdatasetreport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>zdatasetreport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="zdatasetreport.xss">
+      <DependentUpon>zdatasetreport.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\html-color-codes-color-tutorials-903ea3cb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\Cool-Paint-Color-Splash-Background-Wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
